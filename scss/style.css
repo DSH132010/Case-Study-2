@@ -1,0 +1,218 @@
+@import url("../Fonts/fonts.css");
+@import url("../Colors/colors.css");
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media (max-width: 750px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .logo {
+    font-family: var(--Oswald);
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    position: relative;
+  }
+  .logo::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 6px;
+    left: 0;
+    top: 0;
+    background: #3C3B3B;
+    border-radius: 38px;
+  }
+  .logo-two {
+    font-family: var(--Oswald);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 49px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+  .content {
+    text-align: center;
+  }
+  .content h1 {
+    font-family: var(--Quicksand);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 81px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+  }
+}
+
+@media (max-width: 750px) and (max-width: 320px) {
+  .content h1 {
+    width: 100vw;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 750px) {
+  .content p {
+    font-family: var(--Quicksand);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+@media (max-width: 750px) and (max-width: 320px) {
+  .content p {
+    width: 100vw;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+  .img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 50px;
+  }
+  .img img {
+    width: 100%;
+  }
+  .hero-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .hero-footer h2 {
+    font-family: var(--Oswald);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 49px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #000000;
+  }
+  .hero-footer svg {
+    width: 20px;
+  }
+  .hero {
+    height: 68vh;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 750px) and (max-width: 320px) {
+  .hero {
+    height: 68vh;
+  }
+}
+
+@media (max-width: 750px) {
+  .About {
+    background: var(--Primary-Color);
+    height: 100vh;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .About h1 {
+    font-family: var(--Montserrat);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 49px;
+    text-align: center;
+    color: #000000;
+    width: 380px;
+    height: 98px;
+  }
+  .About p {
+    font-family: var(--Quicksand);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+  }
+  .Gallery {
+    padding: 100px 0px;
+    display: -ms-grid;
+    display: grid;
+    grid: auto/repeat(auto-fit, minmax(14em, 2fr));
+  }
+  .Gallery div {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .Gallery div p {
+    font-family: var(--Quicksand);
+  }
+  .Gallery div span {
+    font-family: var(--Quicksand);
+  }
+  .Gallery div img {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

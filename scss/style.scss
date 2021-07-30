@@ -1,0 +1,206 @@
+@import url('../Fonts/fonts.css');
+@import url('../Colors/colors.css');
+
+
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@media (max-width:750px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo{
+        font-family: var(--Oswald);
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 54px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em; 
+        position: relative;
+        
+        &::before{
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 6px;
+            left: 0;
+            top: 0;
+            background: #3C3B3B;
+            border-radius: 38px;
+        }
+    }
+
+    .logo-two{
+        font-family: var(--Oswald);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 27px;    
+        line-height: 49px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+
+    .content{
+        // display: grid;
+        // justify-content: center;
+        text-align: center;
+        // @media (max-width:320px){
+            // padding: 0px ;
+        // }
+
+        h1{
+            font-family: var(--Quicksand);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 81px;
+            text-align: center;
+            letter-spacing: 0.06em;       
+            color: #000000;
+
+            @media (max-width:320px) {
+                width:100vw;
+                line-height: 60px;
+                // text-align: left;
+            }
+        }
+
+        p{
+            font-family: var(--Quicksand);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 31px;
+            text-align: center;
+            color: #000000;
+
+            @media (max-width:320px) {
+                width:100vw;
+                font-size: 16px;
+                // text-align: left;
+            }
+        }
+    }
+
+    .img{
+        display: flex;   
+        justify-content: center;
+        margin-top: 50px;
+        
+        img{
+            width:100%;
+    
+        }
+    }
+    .hero-footer{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+
+        h2{
+            font-family: var(--Oswald);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 49px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: #000000;
+        }
+
+        svg{
+            width:20px;
+        }
+
+    }
+
+    .hero{
+        height: 68vh;
+        display: grid;
+        align-items: center;
+        // justify-items: center;
+        // justify-content: center;
+        text-align: center;
+
+
+        @media (max-width:320px) {
+            height:68vh;
+        }
+    }
+
+    .About{
+        background: var(--Primary-Color);
+        height: 100vh;
+        width:100%;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+
+        h1{
+            font-family: var(--Montserrat);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 49px;
+            text-align: center;
+            color: #000000;
+            width: 380px;
+            height: 98px;
+        }
+
+        p{
+            font-family: var(--Quicksand);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 31px;
+            text-align: center;
+            color: #000000;
+            // width: 325.56px;
+        }
+    }
+
+    .Gallery{
+        padding: 100px 0px;
+        display: grid;
+        grid: auto / repeat(auto-fit, minmax(14em, 2fr));
+
+        div{
+            width:100%;
+            padding: 10px 20px;
+
+            p{
+                font-family: var(--Quicksand);
+            }
+
+            span{
+                font-family: var(--Quicksand);
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+        
+    }
+}

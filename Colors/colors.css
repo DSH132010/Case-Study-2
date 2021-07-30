@@ -1,0 +1,8 @@
+:root{
+    --Black: #000;
+    --White: #fff;
+    --Primary-Color: #FFEDEC;
+    --Gradient-1: linear-gradient(46.57deg, #FFF1F2 19.94%, rgba(254, 245, 246, 0.37) 69.73%);
+    --Gradient-2: linear-gradient(46.57deg, #FEFFF1 38.47%, rgba(255, 216, 218, 0.37) 88.26%);
+    --Gradient-3: linear-gradient(46.57deg, #FFF9E4 38.47%, rgba(255, 216, 218, 0.37) 88.26%); 
+}
