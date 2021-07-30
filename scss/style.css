@@ -236,6 +236,7 @@ header {
 }
 
 .Gallery div img {
+  pointer-events: none;
   width: 100%;
 }
 
